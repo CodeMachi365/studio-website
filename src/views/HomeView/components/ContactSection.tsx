@@ -91,7 +91,7 @@ function ContactInfo() {
   return (
     <section className="contact-info w-full md:w-4/5 lg:w-3/5">
       <h2 className="text-3xl font-semibold mb-8">Contact info</h2>
-      <p className="text-lg mb-4 text-secondary">XXX Studio</p>
+      <p className="text-lg mb-4 text-secondary">Code Machi Studio</p>
       <p className="text-lg mb-4 text-secondary">
         Email :{" "}
         <a

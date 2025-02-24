@@ -7,7 +7,7 @@ const SOCIAL_LINKS = [
     icon: FaLinkedinIn,
   },
   {
-    href: "https://github.com/xxxstudio",
+    href: "https://github.com/CodeMachi365",
     icon: FaGithub,
   },
   {
@@ -15,7 +15,7 @@ const SOCIAL_LINKS = [
     icon: FaTwitter,
   },
   {
-    href: "mailto:xxxstudio@gmail.com",
+    href: "mailto:codemachi365@gmail.com",
     icon: MdEmail,
   },
 ];

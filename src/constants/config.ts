@@ -1,5 +1,5 @@
-const STUDIO_NAME = "XXX Studio";
-const STUDIO_SLOGAN = "We build apps for your business";
-const EMAIL = "support@xxx.studio";
+const STUDIO_NAME = "Code Machi";
+const STUDIO_SLOGAN = "Tech Solution For You";
+const EMAIL = "codemachi365@gmail.com";
 
 export { STUDIO_NAME, STUDIO_SLOGAN, EMAIL };
