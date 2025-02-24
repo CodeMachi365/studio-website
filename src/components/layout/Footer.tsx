@@ -20,7 +20,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-sm">
-          &copy; {new Date().getFullYear() || "2025"} Your Company Name. All
+          &copy; {new Date().getFullYear() || "2025"} Code Machi Studio. All
           rights reserved.
         </p>
       </div>
