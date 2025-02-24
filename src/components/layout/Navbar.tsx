@@ -86,7 +86,7 @@ export function NavbarItems(props: {
 }) {
   const { isFlexRow, setIsOpened } = props;
 
-  function handleOnClick(id: string) {
+  function handleOnClick() {
     setIsOpened(false);
   }
 

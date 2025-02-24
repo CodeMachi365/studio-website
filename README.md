@@ -6,12 +6,7 @@ The Studio Website is a modern, responsive web application designed to showcase 
 
 ## Features
 
-- **Home View**: A comprehensive landing page that includes sections for hero content, core technologies, skills, services, projects, and contact information.
-- **Projects Section**: Displays a list of recent projects with detailed descriptions and tags for easy categorization.
-- **Services Section**: Highlights the various services offered by the studio, each with a unique icon and description.
-- **Skills Section**: Showcases the technical skills and technologies the studio specializes in, using visually appealing technology cards.
-- **Contact Section**: Provides a form for users to send messages directly to the studio, along with contact information.
-- **Responsive Design**: Ensures the website looks great on all devices, from mobile phones to desktops.
+- **Landing Page**: A modern and responsive studio website that showcases our services, projects, skills, and provides easy ways to get in touch with us. The website is optimized for all devices and features an intuitive user interface.
 
 ## Technologies Used
 

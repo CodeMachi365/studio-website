@@ -19,7 +19,7 @@ export default function ResponsiveImage(props: {
   readonly src: string;
   readonly alt: string;
   readonly aspectRatio?: "aspect-square" | "aspect-video";
-  readonly imageStyle?: any;
+  readonly imageStyle?: unknown;
   readonly className?: string;
   readonly objectFit?: "cover" | "contain" | "fill" | "none" | "scale-down";
 }) {
