@@ -84,7 +84,7 @@ function HeroSectionLogo() {
         .trim()}
     >
       <ResponsiveImage
-        src="/images/company_logo.jpg"
+        src="/images/company_logo.webp"
         alt="Company Logo"
         aspectRatio="aspect-square"
       />
