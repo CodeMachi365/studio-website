@@ -6,6 +6,7 @@ import ServicesSection from "./components/ServicesSection";
 import SkillsSection from "./components/SkillsSection";
 import TechStackSection from "./components/CoreTechSection";
 import ViewWrapper from "@/components/layout/ViewWrapper";
+import ToFlutterDemoSection from "./components/ToFlutterDemoSection";
 
 export default function HomeView() {
   return (
@@ -15,6 +16,7 @@ export default function HomeView() {
       <SkillsSection />
       <ServicesSection />
       <ProjectsSection />
+      <ToFlutterDemoSection />
       <ContactSection />
       <Spacer />
       <ScrollUpBtn />

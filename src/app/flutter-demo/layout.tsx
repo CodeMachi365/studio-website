@@ -44,7 +44,7 @@ export default function RootLayout({
 function HomePageButton() {
   return (
     <div className="w-full h-[3.5rem] pl-5 flex items-center">
-      <Link href="/" className="static">
+      <Link href="/">
         <FaHome size={24} />
       </Link>
     </div>
