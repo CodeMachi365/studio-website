@@ -11,10 +11,6 @@ const SOCIAL_LINKS = [
     icon: FaGithub,
   },
   {
-    href: "https://x.com/xxxstudio",
-    icon: FaTwitter,
-  },
-  {
     href: "mailto:codemachi365@gmail.com",
     icon: MdEmail,
   },
