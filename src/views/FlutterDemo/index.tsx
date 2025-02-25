@@ -1,10 +1,13 @@
 import ViewWrapper from "@/components/layout/ViewWrapper";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 export default function FlutterDemoView() {
   return (
     <ViewWrapper id="flutter-demo">
       <IntroSection />
       <IframeSection />
+      <ReferenceLink />
     </ViewWrapper>
   );
 }
@@ -44,5 +47,20 @@ function IframeSection() {
         />
       </div>
     </section>
+  );
+}
+
+function ReferenceLink() {
+  return (
+    <div className="flex flex-col items-center justify-center my-10 gap-2">
+      <div className="group relative">
+        <Link href="https://github.com/code-tiger/weather_app" target="_blank">
+          <FaGithub className="w-8 h-8" />
+          <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+            Source Code
+          </span>
+        </Link>
+      </div>
+    </div>
   );
 }
