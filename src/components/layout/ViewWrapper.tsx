@@ -5,7 +5,7 @@ export default function ViewWrapper(props: {
   const { children, id } = props;
 
   return (
-    <div id={id} className="container w-[90%] mx-auto mt-[3.5rem]">
+    <div id={id} className="max-width-container w-[90%] mx-auto mt-[3.5rem]">
       {children}
     </div>
   );

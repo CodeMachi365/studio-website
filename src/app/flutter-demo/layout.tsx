@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 
 import { Geist, Geist_Mono } from "next/font/google";
-import Footer from "@/components/layout/Footer";
+import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
 
-import "./globals.css";
+import Footer from "@/components/layout/Footer";
 import "@/views/HomeView/HomeView.css";
+
+import "../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,13 +31,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <HomePageButton />
-        <main>{children}</main>
-        <Footer />
+        <ThemeProvider attribute="class">
+          <HomePageButton />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

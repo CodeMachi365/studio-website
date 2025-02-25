@@ -6,7 +6,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 import "@/views/HomeView/HomeView.css";
-import "./globals.css";
+
+import "../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

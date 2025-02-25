@@ -4,7 +4,7 @@ import { useState } from "react";
 import { NAV_SECTIONS } from "@/data/navbar";
 import ThemeButton from "@/components/ui/ThemeButton";
 
-const commonNavClasses = "h-[3.5rem] w-[90%] mx-auto";
+const commonNavClasses = "max-width-container w-[90%] mx-auto h-[3.5rem]";
 
 export default function Navbar() {
   const [isOpened, setIsOpened] = useState(false);
@@ -12,8 +12,7 @@ export default function Navbar() {
   return (
     <header
       className={[
-        "w-full px-4",
-        "fixed top-0 left-0 z-50",
+        "w-full fixed top-0 left-0 z-50",
         "flex items-center justify-between",
         "bg-white shadow-md",
       ]
@@ -22,7 +21,6 @@ export default function Navbar() {
     >
       <DesktopNavbar setIsOpened={setIsOpened} />
       <MobileNavbar isOpened={isOpened} setIsOpened={setIsOpened} />
-      <ThemeButton />
     </header>
   );
 }
@@ -32,11 +30,16 @@ function DesktopNavbar(props: { setIsOpened: (isOpened: boolean) => void }) {
 
   return (
     <nav
-      className={[commonNavClasses, "hidden md:flex items-center column-gap-1"]
+      className={[
+        commonNavClasses,
+        "w-[90%] mx-auto",
+        "hidden md:flex items-center justify-between pr-10",
+      ]
         .join(" ")
         .trim()}
     >
       <NavbarItems isFlexRow={true} setIsOpened={setIsOpened} />
+      <ThemeButton />
     </nav>
   );
 }
@@ -48,9 +51,11 @@ export function MobileNavbar(props: {
   const { isOpened, setIsOpened } = props;
 
   return (
-    <div className="md:hidden">
-      <nav
-        className={[commonNavClasses, "flex justify-between items-center"]
+    <nav className={`${commonNavClasses} md:hidden`}>
+      <div
+        className={[
+          "w-full h-full flex justify-between items-center",
+        ]
           .join(" ")
           .trim()}
       >
@@ -66,16 +71,16 @@ export function MobileNavbar(props: {
             ></div>
           ))}
         </button>
-      </nav>
-
+        <ThemeButton />
+      </div>
       {isOpened && (
         <div className="bg-white w-full shadow-md">
-          <div className="w-[90%] mx-auto py-4">
+          <div className="mx-auto py-4">
             <NavbarItems setIsOpened={setIsOpened} isFlexRow={false} />
           </div>
         </div>
       )}
-    </div>
+    </nav>
   );
 }
 
