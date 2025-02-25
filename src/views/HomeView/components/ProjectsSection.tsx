@@ -1,11 +1,12 @@
 import React from "react";
 import { PROJECTS } from "@/data/projects";
+import ResponsiveImage from "@/components/ui/ResponsiveImage";
 
 export const PROJECTS_SECTION_ID = "home-view-projects-section";
 
 export default function ProjectsSection() {
   return (
-    <section id={PROJECTS_SECTION_ID} className="py-16">
+    <section id={PROJECTS_SECTION_ID} className="py-8">
       <div className="container mx-auto px-4">
         <ProjectsHeader />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -51,7 +52,11 @@ function ProjectImage(props: { imageUrl: string; title: string }) {
   const { imageUrl, title } = props;
   return (
     <div className="w-full p-6">
-      <img src={imageUrl} alt={title} className="w-full h-64 object-cover" />
+      <ResponsiveImage
+        src={imageUrl}
+        alt={title}
+        aspectRatio="aspect-square"
+      />
     </div>
   );
 }

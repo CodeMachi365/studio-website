@@ -1,4 +1,3 @@
-import Button from "@/components/ui/Button";
 import { STUDIO_NAME, STUDIO_SLOGAN } from "@/constants/config";
 import SOCIAL_LINKS from "@/data/socialLinks";
 import { CONTACT_SECTION_ID } from "./ContactSection";

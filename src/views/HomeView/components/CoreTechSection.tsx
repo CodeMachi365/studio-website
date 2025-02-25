@@ -1,5 +1,4 @@
-import { TECH_STACK_CARDS, CORE_TECHS } from "@/data/coreTechs";
-import { FaFaceAngry } from "react-icons";
+import { CORE_TECHS } from "@/data/coreTechs";
 import { TechnologyCards } from "./TechnologyCards";
 
 export const CORE_TECH_SECTION_ID = "home-view-core-tech-section";

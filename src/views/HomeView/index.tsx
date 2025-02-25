@@ -5,19 +5,22 @@ import ProjectsSection from "./components/ProjectsSection";
 import ServicesSection from "./components/ServicesSection";
 import SkillsSection from "./components/SkillsSection";
 import TechStackSection from "./components/CoreTechSection";
+import ViewWrapper from "@/components/layout/ViewWrapper";
+import ToFlutterDemoSection from "./components/ToFlutterDemoSection";
 
 export default function HomeView() {
   return (
-    <div id="home-view" className={`container w-[90%] mx-auto mt-[3.5rem]`}>
+    <ViewWrapper id="home-view">
       <HeroSection />
       <TechStackSection />
       <SkillsSection />
       <ServicesSection />
       <ProjectsSection />
+      <ToFlutterDemoSection />
       <ContactSection />
       <Spacer />
       <ScrollUpBtn />
-    </div>
+    </ViewWrapper>
   );
 }
 
