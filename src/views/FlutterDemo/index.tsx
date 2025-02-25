@@ -1,10 +1,12 @@
 import ViewWrapper from "@/components/layout/ViewWrapper";
+import HomePageButton from "@/components/ui/HomePageButton";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
 export default function FlutterDemoView() {
   return (
-    <ViewWrapper id="flutter-demo">
+    <ViewWrapper id="flutter-demo" className="relative">
+      <HomePageButton className="absolute top-[-2.5rem] left-5" />
       <IntroSection />
       <IframeSection />
       <ReferenceLink />
