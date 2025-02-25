@@ -1,15 +1,8 @@
-/**
- * TODO: backdrop to dismiss navbar when tap outside
- * TODO: animation for mobile navbar
- * TODO: remove the navbar and leave only the button for mobile navbar
- *       (e.g. you do not need the whole navbar on the mobile)
- *
- */
-
 "use client";
 
 import { useState } from "react";
 import { NAV_SECTIONS } from "@/data/navbar";
+import ThemeButton from "@/components/ui/ThemeButton";
 
 const commonNavClasses = "h-[3.5rem] w-[90%] mx-auto";
 
@@ -18,12 +11,18 @@ export default function Navbar() {
 
   return (
     <header
-      className={["w-full", "fixed top-0 left-0 z-50", "bg-white shadow-md"]
+      className={[
+        "w-full px-4",
+        "fixed top-0 left-0 z-50",
+        "flex items-center justify-between",
+        "bg-white shadow-md",
+      ]
         .join(" ")
         .trim()}
     >
       <DesktopNavbar setIsOpened={setIsOpened} />
       <MobileNavbar isOpened={isOpened} setIsOpened={setIsOpened} />
+      <ThemeButton />
     </header>
   );
 }
@@ -86,7 +85,7 @@ export function NavbarItems(props: {
 }) {
   const { isFlexRow, setIsOpened } = props;
 
-  function handleOnClick(id: string) {
+  function handleOnClick() {
     setIsOpened(false);
   }
 

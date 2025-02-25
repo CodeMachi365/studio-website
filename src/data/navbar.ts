@@ -26,4 +26,3 @@ export const NAV_SECTIONS = [
     name: "Contact",
   },
 ];
-import { useState } from "react";
