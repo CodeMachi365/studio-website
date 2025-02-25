@@ -22,16 +22,24 @@ export const metadata: Metadata = {
 
 interface BaseLayoutProps {
   children: React.ReactNode;
-  header: React.ReactNode;
   footer: React.ReactNode;
+  header?: React.ReactNode;
 }
 
 export default function BaseLayout(props: BaseLayoutProps) {
-  const { children, header, footer } = props;
+  const { children, footer, header = <></> } = props;
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={[
+          geistSans.variable,
+          geistMono.variable,
+          "antialiased",
+          "bg-surface dark:bg-surface-dark",
+          "text-primary dark:text-primary-dark",
+        ]
+          .join(" ")
+          .trim()}
       >
         <ThemeProvider attribute="class">
           {header}

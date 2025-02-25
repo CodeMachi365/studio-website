@@ -8,7 +8,9 @@ export default function ViewWrapper(props: {
   return (
     <div
       id={id}
-      className={`max-width-container w-[90%] mx-auto mt-[3.5rem] ${className}`.trim()}
+      className={["max-width-container w-[90%] mx-auto mt-[3.5rem]", className]
+        .join(" ")
+        .trim()}
     >
       {children}
     </div>
