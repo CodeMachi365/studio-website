@@ -30,20 +30,20 @@ export default {
           dark: "#404040",
         },
         surface: {
-          DEFAULT: "#ffffff", // Much darker gray to contrast with primary #fafafa
-          dark: "#000000", // Lighter gray to contrast with primary-dark #171717
+          DEFAULT: "#ffffff",
+          dark: "#000000",
         },
         "on-surface": {
-          DEFAULT: "#000000", // Dark text for contrast on light surface
-          dark: "#ffffff", // Light text for contrast on dark surface
+          DEFAULT: "#000000",
+          dark: "#ffffff",
         },
         "surface-variant": {
-          DEFAULT: "#a3a3a3", // Even darker variant for more contrast
-          dark: "#404040", // Even lighter variant for more contrast
+          DEFAULT: "#a3a3a3",
+          dark: "#404040",
         },
         "on-surface-variant": {
-          DEFAULT: "#171717", // Dark text for contrast
-          dark: "#fafafa", // Light text for contrast
+          DEFAULT: "#171717",
+          dark: "#fafafa",
         },
       },
     },
