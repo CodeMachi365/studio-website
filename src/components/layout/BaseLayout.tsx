@@ -35,8 +35,8 @@ export default function BaseLayout(props: BaseLayoutProps) {
           geistSans.variable,
           geistMono.variable,
           "antialiased",
-          "bg-surface dark:bg-surface-dark",
-          "text-primary dark:text-on-primary-dark",
+          "bg-primary dark:bg-primary-dark",
+          "text-on-primary dark:text-on-primary-dark",
         ]
           .join(" ")
           .trim()}

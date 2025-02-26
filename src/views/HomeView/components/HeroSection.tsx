@@ -1,9 +1,10 @@
+import { flutterDemoRoute } from "@/app/flutter-demo/page";
 import { STUDIO_NAME, STUDIO_SLOGAN } from "@/constants/config";
 import SOCIAL_LINKS from "@/data/socialLinks";
 import ResponsiveImage from "@/components/ui/ResponsiveImage";
 import LinkButton from "@/components/ui/LinkButton";
 
-import { CONTACT_SECTION_ID } from "./ContactSection";
+import Link from "next/link";
 
 export const HERO_SECTION_ID = "home-view-hero-section";
 
@@ -52,9 +53,9 @@ function SocialLinks() {
 
 function SocialLink({ href, icon: Icon }: (typeof SOCIAL_LINKS)[number]) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <Link href={href} target="_blank" rel="noopener noreferrer">
       <Icon size={20} />
-    </a>
+    </Link>
   );
 }
 
@@ -94,7 +95,5 @@ function HeroSectionLogo() {
 }
 
 function HeroSectionAction() {
-  return (
-    <LinkButton href={`#${CONTACT_SECTION_ID}`}>See for yourself</LinkButton>
-  );
+  return <LinkButton href={flutterDemoRoute}>See for yourself</LinkButton>;
 }

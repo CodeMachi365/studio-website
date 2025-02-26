@@ -5,21 +5,14 @@ import { NAV_SECTIONS } from "@/data/navbar";
 import ThemeButton from "@/components/ui/ThemeButton";
 
 const commonNavClasses = "max-width-container w-[90%] mx-auto h-[3.5rem]";
+const commonColorClasses =
+  "bg-primary text-on-primary shadow-md dark:shadow-none dark:bg-surface-dark dark:text-on-surface-dark";
 
 export default function Navbar() {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <header
-      className={[
-        "w-full fixed top-0 left-0 z-50",
-        "flex items-center justify-between",
-        "bg-surface-variant shadow-md dark:shadow-none",
-        "dark:bg-surface-variant-dark dark:text-on-surface-variant-dark",
-      ]
-        .join(" ")
-        .trim()}
-    >
+    <header className={commonColorClasses}>
       <DesktopNavbar setIsOpened={setIsOpened} />
       <MobileNavbar isOpened={isOpened} setIsOpened={setIsOpened} />
     </header>
@@ -92,7 +85,7 @@ function MobileNavbar(props: {
               className={`w-6 h-0.5 bg-on-surface-variant dark:bg-on-surface-variant-dark ${
                 i < 2 ? "mb-1" : ""
               }`}
-            ></div>
+            />
           ))}
         </button>
         <ThemeButton />
@@ -109,7 +102,14 @@ function MobileDropdownMenu(props: {
 
   return (
     <>
-      <div className="absolute top-[3.5rem] left-0 w-screen shadow-md bg-surface-variant dark:bg-surface-variant-dark">
+      <div
+        className={[
+          "absolute top-[3.5rem] left-0 w-screen shadow-md z-[2]",
+          commonColorClasses,
+        ]
+          .join(" ")
+          .trim()}
+      >
         <div className="p-[5%]">
           <NavbarItems setIsOpened={setIsOpened} isFlexRow={false} />
         </div>
@@ -130,7 +130,7 @@ function MobileDropdownMenuBackdrop(props: {
 
   return (
     <div
-      className="absolute top-0 left-0 w-screen h-screen bg-black/50 z-[-1]"
+      className="absolute top-0 left-0 w-screen h-screen z-[1]"
       onClick={handleOnClick}
     />
   );

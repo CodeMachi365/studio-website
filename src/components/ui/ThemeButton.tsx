@@ -17,10 +17,10 @@ export default function ThemeButton(props: { className?: string }) {
       onClick={handleOnClick}
       className={className}
     >
-      <div className="w-5 h-5 text-gray-200 hidden dark:block">
+      <div className="w-5 h-5 text-on-surface-dark hidden dark:block">
         <FaSun />
       </div>
-      <div className="w-5 h-5 text-gray-900 dark:hidden">
+      <div className="w-5 h-5 text-on-surface dark:hidden">
         <FaMoon />
       </div>
     </button>

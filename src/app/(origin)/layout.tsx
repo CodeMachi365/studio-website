@@ -7,7 +7,7 @@ import BaseLayout from "@/components/layout/BaseLayout";
 import "@/views/HomeView/HomeView.css";
 
 export const metadata: Metadata = {
-  title: "Code Machi Studio",
+  title: "Home | Code Machi Studio",
   description:
     "We are a team of developers who are passionate about building great products",
 };
