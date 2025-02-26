@@ -13,8 +13,8 @@ export default function LinkButton(props: {
       type="button"
       className={[
         "w-fit inline-flex items-center gap-2 px-6 py-3 rounded-lg",
-        "bg-primary hover:bg-primary-dark text-white transition-colors",
-        "dark:bg-primary-dark dark:text-on-primary-dark dark:hover:bg-primary-light",
+        "bg-primary text-white",
+        "dark:bg-primary-dark dark:text-on-primary-dark",
         className,
       ]
         .join(" ")
