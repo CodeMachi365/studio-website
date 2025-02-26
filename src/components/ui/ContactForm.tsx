@@ -44,6 +44,7 @@ function MessageInput() {
         Message
       </label>
       <textarea
+        style={{ resize: "none" }}
         className={[
           "shadow-sm h-[30vh] w-full p-3 bg-surface dark:bg-surface-dark text-on-surface dark:text-on-surface-dark border-2 border-surface-variant dark:border-surface-variant-dark rounded-md",
           "focus:outline-none focus:ring-2 focus:ring-surface-variant dark:focus:ring-surface-variant-dark focus:border-surface-variant dark:focus:border-surface-variant-dark",
@@ -51,6 +52,8 @@ function MessageInput() {
           .join(" ")
           .trim()}
         name="message"
+        rows={8}
+        placeholder="Write your message here..."
         required
       />
     </div>
