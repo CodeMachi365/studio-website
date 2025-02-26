@@ -1,7 +1,9 @@
 import { STUDIO_NAME, STUDIO_SLOGAN } from "@/constants/config";
 import SOCIAL_LINKS from "@/data/socialLinks";
-import { CONTACT_SECTION_ID } from "./ContactSection";
 import ResponsiveImage from "@/components/ui/ResponsiveImage";
+import LinkButton from "@/components/ui/LinkButton";
+
+import { CONTACT_SECTION_ID } from "./ContactSection";
 
 export const HERO_SECTION_ID = "home-view-hero-section";
 
@@ -60,10 +62,10 @@ function HeroSectionContent() {
   return (
     <div className="col-[1/3] md:col-[unset]">
       <div className="flex flex-col gap-6">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
           {STUDIO_NAME}
         </h1>
-        <p className="text-xl md:text-2xl text-gray-600">{STUDIO_SLOGAN}</p>
+        <p className="text-xl md:text-2xl">{STUDIO_SLOGAN}</p>
         <HeroSectionAction />
       </div>
     </div>
@@ -93,13 +95,6 @@ function HeroSectionLogo() {
 
 function HeroSectionAction() {
   return (
-    <a
-      href={`#${CONTACT_SECTION_ID}`}
-      type="button"
-      className="w-fit inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 
-                             text-white rounded-lg transition-colors"
-    >
-      See for yourself
-    </a>
+    <LinkButton href={`#${CONTACT_SECTION_ID}`}>See for yourself</LinkButton>
   );
 }

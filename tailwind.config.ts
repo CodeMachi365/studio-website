@@ -19,11 +19,11 @@ export default {
           DEFAULT: "#404040",
           dark: "#d4d4d4",
         },
-        onPrimary: {
+        "on-primary": {
           DEFAULT: "#fafafa",
           dark: "#171717",
         },
-        onSecondary: {
+        "on-secondary": {
           DEFAULT: "#d4d4d4",
           dark: "#404040",
         },
@@ -31,7 +31,7 @@ export default {
           DEFAULT: "#fafafa",
           dark: "#1F2128",
         },
-        onSurface: {
+        "on-surface": {
           DEFAULT: "#404040",
           dark: "#d4d4d4",
         },

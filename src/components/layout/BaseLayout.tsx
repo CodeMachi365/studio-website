@@ -36,7 +36,7 @@ export default function BaseLayout(props: BaseLayoutProps) {
           geistMono.variable,
           "antialiased",
           "bg-surface dark:bg-surface-dark",
-          "text-primary dark:text-primary-dark",
+          "text-primary dark:text-on-primary-dark",
         ]
           .join(" ")
           .trim()}
