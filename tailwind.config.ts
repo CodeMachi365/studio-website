@@ -12,28 +12,36 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#171717", // neutral-900
-          dark: "#fafafa", // neutral-50
+          DEFAULT: "#171717",
+          dark: "#fafafa",
         },
         secondary: {
-          DEFAULT: "#404040", // neutral-700
-          dark: "#d4d4d4", // neutral-300
+          DEFAULT: "#404040",
+          dark: "#d4d4d4",
         },
         onPrimary: {
-          DEFAULT: "#fafafa", // neutral-50
-          dark: "#171717", // neutral-900
+          DEFAULT: "#fafafa",
+          dark: "#171717",
         },
         onSecondary: {
-          DEFAULT: "#d4d4d4", // neutral-300
-          dark: "#404040", // neutral-700
+          DEFAULT: "#d4d4d4",
+          dark: "#404040",
         },
         surface: {
-          DEFAULT: "#fafafa", // neutral-50
-          dark: "#171717", // neutral-900
+          DEFAULT: "#fafafa",
+          dark: "#1F2128",
         },
         onSurface: {
-          DEFAULT: "#404040", // neutral-700
-          dark: "#d4d4d4", // neutral-300
+          DEFAULT: "#404040",
+          dark: "#d4d4d4",
+        },
+        "surface-variant": {
+          DEFAULT: "#fafafa",
+          dark: "#09090b",
+        },
+        "on-surface-variant": {
+          DEFAULT: "#404040",
+          dark: "#e5e5e5",
         },
       },
     },

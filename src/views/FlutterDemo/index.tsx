@@ -20,10 +20,10 @@ function IntroSection() {
   return (
     <section className="mb-12">
       <div>
-        <h1 className="text-secondary dark:text-secondary-dark text-4xl font-bold text-center mb-4">
+        <h1 className="text-4xl font-bold text-center mb-4">
           Flutter Demo
         </h1>
-        <p className="text-secondary dark:text-secondary-dark text-lg text-center mb-12">
+        <p className="text-lg text-center mb-12">
           Discover how Flutter is revolutionizing the industry by enabling
           developers to build natively compiled applications for mobile, web,
           and desktop from a single codebase. Experience the power of
