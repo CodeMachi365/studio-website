@@ -1,4 +1,5 @@
 import ViewWrapper from "@/components/layout/ViewWrapper";
+import ContactForm from "@/components/ui/ContactForm";
 import HomePageButton from "@/components/ui/HomePageButton";
 import ThemeButton from "@/components/ui/ThemeButton";
 import Link from "next/link";
@@ -12,6 +13,7 @@ export default function FlutterDemoView() {
       <IntroSection />
       <IframeSection />
       <ReferenceLink />
+      <ContactForm />
     </ViewWrapper>
   );
 }
@@ -20,9 +22,7 @@ function IntroSection() {
   return (
     <section className="mb-12">
       <div>
-        <h1 className="text-4xl font-bold text-center mb-4">
-          Flutter Demo
-        </h1>
+        <h1 className="text-4xl font-bold text-center mb-4">Flutter Demo</h1>
         <p className="text-lg text-center mb-12">
           Discover how Flutter is revolutionizing the industry by enabling
           developers to build natively compiled applications for mobile, web,
