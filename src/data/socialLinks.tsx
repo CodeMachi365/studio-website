@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 
 const SOCIAL_LINKS = [
   {
-    href: "https://www.linkedin.com/in/xxxstudio",
+    href: "https://www.linkedin.com/in/codemachi-studio",
     icon: FaLinkedinIn,
   },
   {
