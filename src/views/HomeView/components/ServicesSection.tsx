@@ -1,10 +1,10 @@
 import {
   FaMobileAlt,
   FaComments,
-  FaChalkboardTeacher,
   FaPaintBrush,
   FaPlug,
   FaChartLine,
+  FaCode,
 } from "react-icons/fa";
 
 export const SERVICES_SECTION_ID = "home-view-services-section";
@@ -17,40 +17,40 @@ export default function ServicesSection() {
       <div className="services__container container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceContent
           icon={<FaMobileAlt className="text-4xl text-blue-500" />}
-          title="Mobile Applications"
-          description="Building efficient apps for multiple platforms using Swift, React Native, Flutter, or other cross-platform frameworks."
+          title="Mobile App Development"
+          description="Creating responsive apps across platforms using Flutter for seamless user experiences."
         />
         <ServiceContent
           icon={<FaComments className="text-4xl text-green-500" />}
-          title="Consultation"
-          description="A dedicated session to provide expert advice on optimizing mobile strategy and technology choices."
+          title="Expert Consultation"
+          description="Guiding you to the right tech solutions and planning your digital product path."
         />
         <ServiceContent
-          icon={<FaChalkboardTeacher className="text-4xl text-yellow-500" />}
-          title="Training and Workshops"
-          description="Providing training sessions and hands-on workshops to upskill teams in mobile development, design, or technology best practices."
+          icon={<FaCode className="text-4xl text-yellow-500" />}
+          title="Website Development"
+          description="Building modern websites for all devices, from simple pages to complex web apps."
         />
         <ServiceContent
           icon={<FaPaintBrush className="text-4xl text-red-500" />}
           title="UI/UX Design"
-          description="Crafting intuitive and engaging user interfaces for exceptional mobile experiences."
+          description="Designing intuitive interfaces that combine looks with usability to keep users engaged."
         />
         <ServiceContent
           icon={<FaPlug className="text-4xl text-purple-500" />}
-          title="Integrations"
-          description="Seamlessly connecting mobile apps with third-party services, APIs, and backend systems."
+          title="System Integrations"
+          description="Connecting your apps with essential services and systems for a complete solution."
         />
         <ServiceContent
           icon={<FaChartLine className="text-4xl text-indigo-500" />}
-          title="Analytics"
-          description="Implementing robust analytics to track user behavior and improve app performance."
+          title="Data Analytics"
+          description="Using user insights to make better decisions and improve your product performance."
         />
       </div>
     </section>
   );
 }
 
-function ServiceContent({ icon, title, description }) {
+function ServiceContent({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
     <div className="services__content p-4 border rounded-lg shadow-lg">
       <div className="icon__box flex items-center justify-center mb-4">
