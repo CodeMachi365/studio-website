@@ -1,6 +1,7 @@
 import React from "react";
 import { PROJECTS } from "@/data/projects";
 import ResponsiveImage from "@/components/ui/ResponsiveImage";
+import { ProjectDatum } from "@/types/shared";
 
 export const PROJECTS_SECTION_ID = "home-view-projects-section";
 
@@ -26,7 +27,7 @@ function ProjectsHeader() {
         Projects
       </h2>
       <span className="block text-center text-lg text-secondary dark:text-secondary-dark mb-12">
-        Here are the most recent projects I have worked with
+        Here are the most recent projects we have worked with
       </span>
     </>
   );
@@ -66,14 +67,28 @@ function ProjectDetails(props: {
 }) {
   const { title, description, tags } = props;
 
+  const descriptionLines = description.split('\n');
+
+  const mainText = descriptionLines.find(line => !line.trim().startsWith('-')) || '';
+  const bulletPoints = descriptionLines
+    .filter(line => line.trim().startsWith('-'))
+    .map(line => line.trim().substring(1).trim());
+
   return (
     <div className="w-full p-6">
       <h3 className="text-xl font-semibold mb-4 text-on-primary dark:text-on-primary-dark">
         {title}
       </h3>
-      <p className="text-secondary dark:text-secondary-dark mb-4">
-        {description}
-      </p>
+      <div className="text-secondary dark:text-secondary-dark mb-4">
+        <p className="mb-2">{mainText}</p>
+        {bulletPoints.length > 0 && (
+          <ul className="list-disc ml-5 mb-2">
+            {bulletPoints.map((point, i) => (
+              <li key={i}>{point}</li>
+            ))}
+          </ul>
+        )}
+      </div>
       <ul className="flex flex-wrap gap-2 mb-4">
         {tags.map((tag, tagIndex) => (
           <ProjectTag key={tagIndex} tag={tag} />
