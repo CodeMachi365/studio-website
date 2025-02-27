@@ -4,8 +4,8 @@ import SOCIAL_LINKS from "@/data/socialLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-4">
-      <div className="container mx-auto flex flex-col items-center">
+    <footer className="bg-surface-dark text-on-surface-dark py-4">
+      <div className="max-width-container mx-auto flex flex-col items-center">
         <div className="flex space-x-4 mb-4">
           {SOCIAL_LINKS.map(({ href, icon: Icon }) => (
             <a

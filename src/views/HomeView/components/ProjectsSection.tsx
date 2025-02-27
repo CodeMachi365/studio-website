@@ -22,8 +22,10 @@ export default function ProjectsSection() {
 function ProjectsHeader() {
   return (
     <>
-      <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
-      <span className="block text-center text-lg text-gray-600 mb-12">
+      <h2 className="text-3xl font-bold text-center mb-8 text-on-primary dark:text-on-primary-dark">
+        Projects
+      </h2>
+      <span className="block text-center text-lg text-secondary dark:text-secondary-dark mb-12">
         Here are the most recent projects I have worked with
       </span>
     </>
@@ -36,7 +38,7 @@ function ProjectCard(props: { project: ProjectDatum; index: number }) {
   return (
     <div
       key={`home-view-project-${index}`}
-      className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden"
+      className="flex flex-col items-center bg-surface dark:bg-surface-dark shadow-lg rounded-lg overflow-hidden"
     >
       <ProjectImage imageUrl={project.imageUrl} title={project.title} />
       <ProjectDetails
@@ -52,11 +54,7 @@ function ProjectImage(props: { imageUrl: string; title: string }) {
   const { imageUrl, title } = props;
   return (
     <div className="w-full p-6">
-      <ResponsiveImage
-        src={imageUrl}
-        alt={title}
-        aspectRatio="aspect-square"
-      />
+      <ResponsiveImage src={imageUrl} alt={title} aspectRatio="aspect-square" />
     </div>
   );
 }
@@ -70,8 +68,12 @@ function ProjectDetails(props: {
 
   return (
     <div className="w-full p-6">
-      <h3 className="text-xl font-semibold mb-4">{title}</h3>
-      <p className="text-gray-700 mb-4">{description}</p>
+      <h3 className="text-xl font-semibold mb-4 text-on-primary dark:text-on-primary-dark">
+        {title}
+      </h3>
+      <p className="text-secondary dark:text-secondary-dark mb-4">
+        {description}
+      </p>
       <ul className="flex flex-wrap gap-2 mb-4">
         {tags.map((tag, tagIndex) => (
           <ProjectTag key={tagIndex} tag={tag} />
