@@ -7,9 +7,13 @@ import BaseLayout from "@/components/layout/BaseLayout";
 import "@/views/HomeView/HomeView.css";
 
 export const metadata: Metadata = {
-  title: "Home | Code Machi Studio",
-  description:
-    "We are a team of developers who are passionate about building great products",
+  title: "Code Machi Studio | Full-Stack Development Solutions",
+  description: "Code Machi Studio offers comprehensive tech solutions including Flutter app development, web applications, database setup, and full-stack services. Your one-stop partner for transforming ideas into digital reality.",
+  keywords: ["app development", "Flutter", "web development", "database", "full-stack", "tech solutions", "software development", "Code Machi"],
+  icons: {
+    icon: "/images/favicon.ico",
+  },
+
 };
 
 export default function RootLayout({

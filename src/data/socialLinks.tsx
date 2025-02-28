@@ -3,19 +3,15 @@ import { MdEmail } from "react-icons/md";
 
 const SOCIAL_LINKS = [
   {
-    href: "https://www.linkedin.com/in/xxxstudio",
+    href: "https://www.linkedin.com/in/codemachi-studio",
     icon: FaLinkedinIn,
   },
   {
-    href: "https://github.com/xxxstudio",
+    href: "https://github.com/CodeMachi365",
     icon: FaGithub,
   },
   {
-    href: "https://x.com/xxxstudio",
-    icon: FaTwitter,
-  },
-  {
-    href: "mailto:xxxstudio@gmail.com",
+    href: "mailto:codemachi365@gmail.com",
     icon: MdEmail,
   },
 ];

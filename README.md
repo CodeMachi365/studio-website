@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Studio Website is a modern, responsive web application designed to showcase the services, projects, and skills of XXX Studio. Built with the latest web technologies, it provides an engaging user experience with a focus on clean design and intuitive navigation.
+The Studio Website is a modern, responsive web application designed to showcase the services, projects, and skills of Code Machi Studio. Built with the latest web technologies, it provides an engaging user experience with a focus on clean design and intuitive navigation.
 
 ## Features
 
