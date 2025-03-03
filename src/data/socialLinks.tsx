@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const SOCIAL_LINKS = [

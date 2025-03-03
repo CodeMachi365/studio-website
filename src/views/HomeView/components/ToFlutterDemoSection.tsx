@@ -1,4 +1,3 @@
-import { flutterDemoRoute } from "@/app/flutter-demo/page";
 import LinkButton from "@/components/ui/LinkButton";
 
 export const TO_FLUTTER_DEMO_SECTION_ID = "home-view-to-flutter-demo-section";
@@ -14,7 +13,7 @@ export default function ToFlutterDemoSection() {
         codebase. Check out our demo to see Flutter in action.
       </p>
       <div className="flex justify-center">
-        <LinkButton href={flutterDemoRoute}>Go to Flutter Demo</LinkButton>
+        <LinkButton href="/flutter-demo">Go to Flutter Demo</LinkButton>
       </div>
     </section>
   );

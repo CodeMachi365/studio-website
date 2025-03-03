@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
 
 /**
  * How to use:
@@ -19,7 +20,7 @@ export default function ResponsiveImage(props: {
   readonly src: string;
   readonly alt: string;
   readonly aspectRatio?: "aspect-square" | "aspect-video";
-  readonly imageStyle?: unknown;
+  readonly imageStyle?: CSSProperties;
   readonly className?: string;
   readonly objectFit?: "cover" | "contain" | "fill" | "none" | "scale-down";
 }) {

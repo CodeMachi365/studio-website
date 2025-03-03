@@ -1,4 +1,3 @@
-import { flutterDemoRoute } from "@/app/flutter-demo/page";
 import { STUDIO_NAME, STUDIO_SLOGAN } from "@/constants/config";
 import SOCIAL_LINKS from "@/data/socialLinks";
 import ResponsiveImage from "@/components/ui/ResponsiveImage";
@@ -95,5 +94,5 @@ function HeroSectionLogo() {
 }
 
 function HeroSectionAction() {
-  return <LinkButton href={flutterDemoRoute}>See for yourself</LinkButton>;
+  return <LinkButton href="/flutter-demo">See for yourself</LinkButton>;
 }
