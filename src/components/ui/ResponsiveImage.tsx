@@ -46,6 +46,7 @@ export default function ResponsiveImage(props: {
         src={src}
         alt={alt}
         fill
+        unoptimized
       />
     </div>
   );
